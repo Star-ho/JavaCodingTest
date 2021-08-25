@@ -36,7 +36,7 @@ class JavaTest {
         var strArr=new String[]{"123","456","789"};
         var strList=Arrays.asList("123","456","789");
 
-        var intArrayToList=new ArrayList<Integer>(Arrays.asList(1,2,3,4,5));
+        var intArrayToList=(ArrayList<Integer>)Arrays.stream(intArr).boxed().collect(Collectors.toList());
         assertTrue(intgerList.equals(intArrayToList));
 
         var strArrToList=Arrays.asList(strArr);
