@@ -73,7 +73,7 @@ class JavaTest {
     void sortTest(){
         //참고 https://www.baeldung.com/java-sorting-arrays
         int[] intArr=new int[]{5,1,2,4,3};
-        var stringArr = new String[] { "learning", "java", "with", "baeldung" };
+        var stringArr = new String[] {   "learning", "java", "with", "baeldung" };
         var doubleIntArr=new int[][]{{1, 9},{0, 3}, {2, 6}};
 
         Arrays.sort(intArr);
