@@ -10,7 +10,7 @@ public class Programmers2 {
 
     public static boolean solution(String[] phone_book) {
         HashSet<String> hashSet = (HashSet<String>) Arrays.stream(phone_book).collect(Collectors.toSet());
-
+        var a =Arrays.asList(1);
         for (String key : hashSet)
             for (int j = 1; j <= key.length() - 1; j++) {
 
