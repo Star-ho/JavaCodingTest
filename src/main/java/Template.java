@@ -11,6 +11,7 @@ public class Template {
     public static int[] solution(int[] array, int[][] commands) {
         int i=0;
         var a=0;
+        List<Character> a;
         while(i<10){
             try {
                 System.out.println("try block");
