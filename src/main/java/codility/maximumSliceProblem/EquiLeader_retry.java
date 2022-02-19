@@ -1,6 +1,6 @@
 package codility.maximumSliceProblem;
 
-class EquiLeader {
+class EquiLeader_retry {
     public int solution(int[] A) {
         int[] counter={0,0};
         for(int i=0;i<A.length;i++){
@@ -35,7 +35,7 @@ class EquiLeader {
         int answer=0;
         int afterCounter=0;
         int flag=0;
-        for(int i=0;i<A.length;i++){
+        for(int i=0;i<A.length;i++){// 왼쪽 오른쪽 사이즈에 대한 값을 구해 리더인지 판별가능함, 좀 나가리친 경향이 있음
             int a=A[i];
             if(a==leader){
                 beforeCounter++;
