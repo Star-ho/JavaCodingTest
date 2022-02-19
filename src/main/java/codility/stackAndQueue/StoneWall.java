@@ -2,7 +2,6 @@ package codility.stackAndQueue;
 
 // you can also use imports, for example:
 import java.util.*;
-import java.util.stream.*;
 
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
