@@ -1,9 +1,27 @@
 import java.sql.SQLOutput;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ATest {
     public static void main(String[] arg){
-        System.out.println(solution(new String[][]{{"ICN", "JFK"}, {"HND", "IAD"}, {"JFK", "HND"}}));
+        String a="111{123}111{444}asd";
+        Pattern pattern = Pattern.compile("\\{(.*?)}");
+        Matcher matcher = pattern.matcher(a);
+        Set<String> set = new HashSet<>();
+        while(matcher.find()){
+            set.add(matcher.group(1));
+            if(matcher.group(1)==null)break;
+        }
+
+        System.out.println(set);
+
+        for(String literal : set){
+            a=a.replaceAll("\\{"+literal+"}","ff");
+        }
+        System.out.println(a);
+
+
     }
 
     public static String[] solution(String[][] tickets) {
